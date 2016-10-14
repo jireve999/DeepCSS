@@ -5,17 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>inline-block</title>
+  <style>
+  #inline-div {
+    display: inline;
+    height: 300px;
+    line-height: 300px;
+    width: 600px;
+    background: green;
+    border: 5px solid purple;
+  }
+
+  #block-span {
+    display: block;
+    height: 300px;
+    line-height: 300px;
+    width: 600px;
+    background: blue;
+    border: 5px solid purple;
+  }
+
+  #inline-block-div {
+    display: inline-block;
+    height: 300px;
+    line-height: 300px;
+    width: 600px;
+    background: yellow;
+    border: 5px solid purple;
+  }
+
+  #inline-inner-div {
+    display: inline-block;
+    border: 5px solid purple;
+  }
+
+  </style>
 </head>
 <body>
-<div id="all-inline">
-<span>span</span>
-<a href="hoho">a</a>
+  <div id="all-inline">
+    <span>span</span>
+    <a href="hoho">a</a>
+    <strong>strong</strong>
+    <em>em</em>
+    <label for="">label</label>
+    <input type="text">
+    <select name="" id=""></select>
+    <textarea name="name" rows="8" cols="40"></textarea>
+    <img src="" alt="">
+    <br>hoho
+  </div>
 
-</div>
+  <div id="all-block">
+    <div>div</div>
+    <form action="">form</form>
+    <table>table</table>
+    <p>p</p>
+    <pre>pre</pre>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <dl>dl</dl>
+    <ol>ol</ol>
+    <ul>ul</ul>
+  </div>
 
-<div id="all-block">
+  <div id="inline-div">
+    inline-div
+  </div>
 
-</div>
+  <span id='block-span'>block span</span>
+
+  <div id="inline-block-div">
+    inline-block div
+  </div>
+
+  <span id='inline-inner-div'>
+    <div id="inner-dv">
+      <p>line 1</p>
+      <p>line 2</p>
+      <p>line 3</p>
+      <p>line 4</p>
+      <p>line 5</p>
+      <p>line 6</p>
+      <p>line 7</p>
+      <p>line 8line 8line 8line 8line 8line 8line 8line 8line 8</p>
+    </div>
+  </span>
 
 </body>
 </html>
