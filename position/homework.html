@@ -5,6 +5,47 @@
 </head>
 
 <style type="text/css">
+* {
+	box-sizing: border-box;
+}
+
+#position {
+	width: 500px;
+	height: 300px;
+	border: 5px solid green;
+	position: relative;
+}
+
+#position-left {
+	position: absolute;
+	width: 30%;
+	border: 5px solid green;
+}
+
+#position-right {
+	position: absolute;
+	left: 30%;
+	width: 70%;
+	border: 5px solid blue;
+}
+
+#inline {
+	width: 500px;
+	height: 300px;
+	border: 5px solid blue;
+}
+
+#inline-left {
+	display: inline-block;	
+	border: 5px solid green;
+	width: 30%;
+}
+
+#inline-right {
+	display: inline-block;
+	border: 5px solid blue;
+	width: 70%;
+}
 
 </style>
 
@@ -16,8 +57,7 @@
 </div>
 
 <div id="inline">
-	<div id="inline-left">inline columns left</div>
-	<div id="inline-right">inline columns right</div>
+	<div id="inline-left">inline columns left</div><div id="inline-right">inline columns right</div>
 </div>
 
 </body>
